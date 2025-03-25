@@ -34,7 +34,10 @@
 				</Linker>
 			</Target>
 		</Build>
-		<Unit filename="main.c">
+		<Unit filename="../ModulesKolesnyk.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="main.cpp">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Extensions>
