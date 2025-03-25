@@ -38,7 +38,6 @@ void runTests() {
     int passedTests = 0;
 
     for (int i = 0; i < numTests; ++i) {
-        TestCase testCases[i];
         cout << "Тест " << i + 1 << ": x = " << testCases[i].x << ", y = " << testCases[i].y << ", z = " << testCases[i].z << endl;
         double result = s_calculation(testCases[i].x, testCases[i].y, testCases[i].z);
         if (compare(result, testCases[i].expected, testCases[i].isExpectedError)) {
