@@ -16,7 +16,11 @@
 				<Compiler>
 					<Add option="-Wall" />
 					<Add option="-g" />
+					<Add directory="../../prj" />
 				</Compiler>
+				<Linker>
+					<Add directory="bin/Debug" />
+				</Linker>
 			</Target>
 			<Target title="Release">
 				<Option output="bin/Release/ModulesKolesnyk" prefix_auto="1" extension_auto="1" />

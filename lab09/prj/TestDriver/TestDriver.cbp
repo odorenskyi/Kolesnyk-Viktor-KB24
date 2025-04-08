@@ -13,7 +13,12 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="../../../lab08/prj" />
 				</Compiler>
+				<Linker>
+					<Add library="../../../lab08/prj/ModulesKolesnyk/bin/Debug/libModulesKolesnyk.a" />
+					<Add directory="../../../lab08/prj/ModulesKolesnyk/bin/Debug" />
+				</Linker>
 			</Target>
 			<Target title="Release">
 				<Option output="bin/Release/TestDriver" prefix_auto="1" extension_auto="1" />
