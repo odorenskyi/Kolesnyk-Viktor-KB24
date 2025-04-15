@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1742928088 source:g:\Університети\Завдання 1 курс - 2 семестр\kolesnyk-viktor-kb24\lab08\prj\kolesnyk_task\main.cpp
+1742931688 source:g:\Університети\Завдання 1 курс - 2 семестр\kolesnyk-viktor-kb24\lab08\prj\kolesnyk_task\main.cpp
 	<iostream>
 	<iomanip>
 	<cmath>
@@ -7,5 +7,6 @@
 	<locale>
 	"ModulesKolesnyk.h"
 
-1742903586 g:\Університети\Завдання 1 курс - 2 семестр\kolesnyk-viktor-kb24\lab08\prj\moduleskolesnyk.h
+1744128129 g:\Університети\Завдання 1 курс - 2 семестр\kolesnyk-viktor-kb24\lab08\prj\moduleskolesnyk.h
+	<string>
 
