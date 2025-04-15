@@ -1,5 +1,8 @@
 #include <iostream>
 #include <cmath>
+#include <fstream>
+#include <ctime>
+#include <cstring>
 #include "ModulesKolesnyk.h"
 
 using namespace std;
@@ -80,4 +83,116 @@ BinaryResult analyzeBinary(unsigned int number) {
         : (((number >> i) & 1) == 1) ? 1 : 0;
     }
     return result;
+}
+
+void task10_1(const char* inputFile, const char* outputFile) {
+    ifstream in(inputFile);
+    ofstream out(outputFile);
+    string word;
+    in >> word;
+    int vowelCount = 0;
+    const char vowels[] = "аеєиіїоуюяАЕЄИІЇОУЮЯ";
+    for (size_t i = 0; i < word.length(); ++i) {
+        for (size_t j = 0; j < sizeof(vowels) - 1; ++j) {
+            if (word[i] == vowels[j]) {
+                ++vowelCount;
+                break;
+            }
+        }
+    }
+
+    const char* poem =
+        "До щастя не пускає лінощів орава. "
+        "У чім воно - ніхто не знає до пуття. "
+        "Навчитись радісно робити кожну справу "
+        "Найперше правило щасливого життя.";
+
+    bool found = false;
+    int poemLen = strlen(poem);
+    int wlen = word.length();
+    for (int i = 0; i <= poemLen - wlen; ++i) {
+        int j = 0;
+        while (j < wlen && poem[i + j] == word[j]) ++j;
+        if (j == wlen && (i + j == poemLen || !isalpha(poem[i + j]))) {
+            found = true;
+            break;
+        }
+    }
+
+    out << "Розробник: Колесник Віктор, ЦНТУ, Кропивницький, Україна, 2025\n";
+    out << "У слові \"" << word << "\" міститься " << vowelCount << " голосних літер.\n";
+    if (found) {
+        out << "Слово \"" << word << "\" входить до вірша Віталія Іващенка.\n";
+    } else {
+        out << "Слова \"" << word << "\" немає у вірші Віталія Іващенка.\n";
+    }
+
+    in.close();
+    out.close();
+}
+
+void task10_2(const char* inputFile, const char* outputFile) {
+    srand(time(NULL));
+    ifstream in(inputFile);
+    ofstream out(outputFile, ios::app);
+    string word;
+    in >> word;
+
+    const char ukrUpperCase[] = "АБВГҐДЕЄЖЗИІЇЙКЛМНОПРСТУФХЦЧШЩЬЮЯ";
+
+    for (size_t i = 0; i < word.length(); ++i) {
+        bool isUpper = false;
+        for (size_t j = 0; j < strlen(ukrUpperCase); ++j) {
+            if (word[i] == ukrUpperCase[j]) {
+                isUpper = true;
+                break;
+            }
+        }
+        if (isUpper) {
+            word[i] = '0' + rand() % 10;
+        }
+    }
+
+    time_t now = time(0);
+    char* dt = ctime(&now);
+
+    out << "Модифіковане слово: " << word << "\n";
+    out << "Дата та час дозапису: " << dt << "\n";
+
+    in.close();
+    out.close();
+}
+
+void task10_3(const char* inputFile, const char* outputFile) {
+    ifstream in(inputFile);
+    ofstream out(outputFile, ios::app);
+    double x, y, z;
+    int b;
+    in >> x >> y >> z >> b;
+
+    double result = s_calculation(x, y, z);
+    out << "Результат обчислення функції s_calculation(" << x << ", " << y << ", " << z << ") дорівнює " << result << ".\n";
+
+    char binary[65];
+    int i = 0;
+    int temp = b;
+    if (temp == 0) {
+        binary[i++] = '0';
+    } else {
+        while (temp > 0) {
+            binary[i++] = (temp % 2) + '0';
+            temp /= 2;
+        }
+    }
+    binary[i] = '\0';
+    for (int j = 0; j < i / 2; ++j) {
+        char t = binary[j];
+        binary[j] = binary[i - 1 - j];
+        binary[i - 1 - j] = t;
+    }
+
+    out << "Число " << b << " у двійковій системі: " << binary << ".\n";
+
+    in.close();
+    out.close();
 }
