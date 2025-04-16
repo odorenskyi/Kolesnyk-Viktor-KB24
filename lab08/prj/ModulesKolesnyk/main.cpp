@@ -86,10 +86,12 @@ BinaryResult analyzeBinary(unsigned int number) {
 }
 
 void task10_1(const char* inputFile, const char* outputFile) {
+    // «ам≥щаЇмо вх≥дний файл результатами
     ifstream in(inputFile);
-    ofstream out(outputFile);
+    ofstream out(outputFile);  // ¬их≥дний файл дл€ результат≥в
     string word;
     in >> word;
+
     int vowelCount = 0;
     const char vowels[] = "аеЇи≥њоую€ј≈™»≤ѓќ”ёя";
     for (size_t i = 0; i < word.length(); ++i) {
@@ -131,25 +133,22 @@ void task10_1(const char* inputFile, const char* outputFile) {
     out.close();
 }
 
-void task10_2(const char* inputFile, const char* outputFile) {
+void task10_2(const char* inputFile) {
     srand(time(NULL));
+
     ifstream in(inputFile);
-    ofstream out(outputFile, ios::app);
+    ofstream out(inputFile, ios::app);
     string word;
     in >> word;
 
     const char ukrUpperCase[] = "јЅ¬√•ƒ≈™∆«»≤ѓ… ЋћЌќѕ–—“”‘’÷„Ўў№ёя";
 
     for (size_t i = 0; i < word.length(); ++i) {
-        bool isUpper = false;
         for (size_t j = 0; j < strlen(ukrUpperCase); ++j) {
             if (word[i] == ukrUpperCase[j]) {
-                isUpper = true;
+                word[i] = '0' + rand() % 10;
                 break;
             }
-        }
-        if (isUpper) {
-            word[i] = '0' + rand() % 10;
         }
     }
 
@@ -164,11 +163,15 @@ void task10_2(const char* inputFile, const char* outputFile) {
 }
 
 void task10_3(const char* inputFile, const char* outputFile) {
+
     ifstream in(inputFile);
-    ofstream out(outputFile, ios::app);
+    ofstream out(outputFile);
+
     double x, y, z;
     int b;
     in >> x >> y >> z >> b;
+
+    out << x << " " << y << " " << z << " " << b << "\n";
 
     double result = s_calculation(x, y, z);
     out << "–езультат обчисленн€ функц≥њ s_calculation(" << x << ", " << y << ", " << z << ") дор≥внюЇ " << result << ".\n";

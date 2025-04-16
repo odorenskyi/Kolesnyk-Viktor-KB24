@@ -1,11 +1,11 @@
 # depslib dependency file v1.0
-1744132909 source:g:\Університети\Завдання 1 курс - 2 семестр\kolesnyk-viktor-kb24\lab09\prj\testdriver\main.cpp
+1744714957 source:g:\Університети\Завдання 1 курс - 2 семестр\kolesnyk-viktor-kb24\lab09\prj\testdriver\main.cpp
 	<iostream>
 	<string>
 	<cmath>
 	<locale>
 	"ModulesKolesnyk.h"
 
-1744128129 g:\Університети\Завдання 1 курс - 2 семестр\kolesnyk-viktor-kb24\lab08\prj\moduleskolesnyk.h
+1744758802 g:\Університети\Завдання 1 курс - 2 семестр\kolesnyk-viktor-kb24\lab08\prj\moduleskolesnyk.h
 	<string>
 
