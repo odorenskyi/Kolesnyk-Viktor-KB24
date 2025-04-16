@@ -86,9 +86,8 @@ BinaryResult analyzeBinary(unsigned int number) {
 }
 
 void task10_1(const char* inputFile, const char* outputFile) {
-    // Заміщаємо вхідний файл результатами
     ifstream in(inputFile);
-    ofstream out(outputFile);  // Вихідний файл для результатів
+    ofstream out(outputFile);
     string word;
     in >> word;
 
