@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1746392380 source:g:\Університети\Завдання 1 курс - 2 семестр\kolesnyk-viktor-kb24\lab11\prj\module_file_zaritskyi\module_file_zaritskyi.cpp
+	"Module_File_Zaritskyi.h"
+
+1746375268 g:\Університети\Завдання 1 курс - 2 семестр\kolesnyk-viktor-kb24\lab11\prj\module_file_zaritskyi\module_file_zaritskyi.h
+	"struct_type_project_2.h"
+	<string>
+	<fstream>
+	<iostream>
+

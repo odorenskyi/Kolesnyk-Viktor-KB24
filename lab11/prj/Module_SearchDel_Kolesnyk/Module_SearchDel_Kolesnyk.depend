@@ -1,13 +1,33 @@
 # depslib dependency file v1.0
-1746380798 source:g:\Університети\Завдання 1 курс - 2 семестр\kolesnyk-viktor-kb24\lab11\prj\module_searchdel_kolesnyk\main.cpp
+1746368225 source:c:\users\mikroffarad\desktop\lr11\module_searchdel_kolesnyk\module_searchdel_kolesnyk.cpp
+	"Module_SearchDel_Kolesnyk.h"
+	<iostream>
+	<string>
+
+1746368184 c:\users\mikroffarad\desktop\lr11\module_searchdel_kolesnyk\module_searchdel_kolesnyk.h
+	"struct_type_project_2.h"
+
+1746368164 c:\users\mikroffarad\desktop\lr11\project_2\struct_type_project_2.h
+	<string>
+
+1746378653 source:g:\Університети\lr11\module_searchdel_kolesnyk\module_searchdel_kolesnyk.cpp
+	"Module_SearchDel_Kolesnyk.h"
+	<iostream>
+	<cctype>
+
+1746372854 g:\Університети\lr11\module_searchdel_kolesnyk\module_searchdel_kolesnyk.h
+	"struct_type_project_2.h"
+	<string>
+
+1746375038 g:\Університети\lr11\project_2\struct_type_project_2.h
+	<string>
+
+1746392418 source:g:\Університети\Завдання 1 курс - 2 семестр\kolesnyk-viktor-kb24\lab11\prj\module_searchdel_kolesnyk\module_searchdel_kolesnyk.cpp
 	<iostream>
 	<cctype>
 	"Module_SearchDel_Kolesnyk.h"
 
-1746380789 g:\Університети\Завдання 1 курс - 2 семестр\kolesnyk-viktor-kb24\lab11\prj\module_searchdel_kolesnyk\module_searchdel_kolesnyk.h
-	<string>
+1746372854 g:\Університети\Завдання 1 курс - 2 семестр\kolesnyk-viktor-kb24\lab11\prj\module_searchdel_kolesnyk\module_searchdel_kolesnyk.h
 	"struct_type_project_2.h"
-
-1746380919 g:\Університети\Завдання 1 курс - 2 семестр\kolesnyk-viktor-kb24\lab11\prj\struct_type_project_2.h
 	<string>
 

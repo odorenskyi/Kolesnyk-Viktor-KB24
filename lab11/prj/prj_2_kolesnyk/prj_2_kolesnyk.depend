@@ -1,0 +1,103 @@
+# depslib dependency file v1.0
+1746368911 source:c:\users\mikroffarad\desktop\lr11\project_2\main.cpp
+	<iostream>
+	<string>
+	<limits>
+	"struct_type_project_2.h"
+	"Module_File_Zaritskyi.h"
+	"Module_CRUD_Kondratenko.h"
+	"Module_SearchDel_Kolesnyk.h"
+
+1746368790 c:\users\mikroffarad\desktop\lr11\project_2\struct_type_project_2.h
+	<string>
+
+1746360487 c:\users\mikroffarad\desktop\lr11\module_file_zaritskyi\module_file_zaritskyi.h
+	"struct_type_project_2.h"
+	<string>
+	<fstream>
+	<iostream>
+
+1746360759 c:\users\mikroffarad\desktop\lr11\module_crud_kondratenko\module_crud_kondratenko.h
+	"struct_type_project_2.h"
+	<string>
+
+1746368756 c:\users\mikroffarad\desktop\lr11\module_searchdel_kolesnyk\module_searchdel_kolesnyk.h
+	"struct_type_project_2.h"
+	<string>
+
+1746370644 source:g:\Університети\lr11\project_2\main.cpp
+	<iostream>
+	<string>
+	<limits>
+	"struct_type_project_2.h"
+	"Module_File_Zaritskyi.h"
+	"Module_CRUD_Kondratenko.h"
+	"Module_SearchDel_Kolesnyk.h"
+
+1746392489 g:\Університети\lr11\project_2\struct_type_project_2.h
+	<string>
+
+1746375268 g:\Університети\lr11\module_file_zaritskyi\module_file_zaritskyi.h
+	"struct_type_project_2.h"
+	<string>
+	<fstream>
+	<iostream>
+
+1746375813 g:\Університети\lr11\module_crud_kondratenko\module_crud_kondratenko.h
+	"struct_type_project_2.h"
+	<string>
+
+1746372854 g:\Університети\lr11\module_searchdel_kolesnyk\module_searchdel_kolesnyk.h
+	"struct_type_project_2.h"
+	<string>
+
+1746370644 source:g:\Університети\Завдання 1 курс - 2 семестр\kolesnyk-viktor-kb24\lab11\prj\project_2\main.cpp
+	<iostream>
+	<string>
+	<limits>
+	"struct_type_project_2.h"
+	"Module_File_Zaritskyi.h"
+	"Module_CRUD_Kondratenko.h"
+	"Module_SearchDel_Kolesnyk.h"
+
+1746392489 g:\Університети\Завдання 1 курс - 2 семестр\kolesnyk-viktor-kb24\lab11\prj\project_2\struct_type_project_2.h
+	<string>
+
+1746375268 g:\Університети\Завдання 1 курс - 2 семестр\kolesnyk-viktor-kb24\lab11\prj\module_file_zaritskyi\module_file_zaritskyi.h
+	"struct_type_project_2.h"
+	<string>
+	<fstream>
+	<iostream>
+
+1746375813 g:\Університети\Завдання 1 курс - 2 семестр\kolesnyk-viktor-kb24\lab11\prj\module_crud_kondratenko\module_crud_kondratenko.h
+	"struct_type_project_2.h"
+	<string>
+
+1746372854 g:\Університети\Завдання 1 курс - 2 семестр\kolesnyk-viktor-kb24\lab11\prj\module_searchdel_kolesnyk\module_searchdel_kolesnyk.h
+	"struct_type_project_2.h"
+	<string>
+
+1746393631 source:g:\Університети\Завдання 1 курс - 2 семестр\kolesnyk-viktor-kb24\lab11\prj\project_2_kolesnyk\main.cpp
+	<iostream>
+	<string>
+	<cstdlib>
+	"struct_type_project_2.h"
+	"Module_File_Zaritskyi.h"
+	"Module_CRUD_Kondratenko.h"
+	"Module_SearchDel_Kolesnyk.h"
+
+1746392489 g:\Університети\Завдання 1 курс - 2 семестр\kolesnyk-viktor-kb24\lab11\prj\project_2_kolesnyk\struct_type_project_2.h
+	<string>
+
+1746393631 source:g:\Університети\Завдання 1 курс - 2 семестр\kolesnyk-viktor-kb24\lab11\prj\prj_2_kolesnyk\main.cpp
+	<iostream>
+	<string>
+	<cstdlib>
+	"struct_type_project_2.h"
+	"Module_File_Zaritskyi.h"
+	"Module_CRUD_Kondratenko.h"
+	"Module_SearchDel_Kolesnyk.h"
+
+1746392489 g:\Університети\Завдання 1 курс - 2 семестр\kolesnyk-viktor-kb24\lab11\prj\prj_2_kolesnyk\struct_type_project_2.h
+	<string>
+

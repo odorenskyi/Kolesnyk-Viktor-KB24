@@ -1,8 +1,8 @@
 #ifndef MODULE_SEARCHDEL_KOLESNYK_H
 #define MODULE_SEARCHDEL_KOLESNYK_H
 
-#include <string>
 #include "struct_type_project_2.h"
+#include <string>
 
 using namespace std;
 
