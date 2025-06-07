@@ -7,13 +7,15 @@
 
 using namespace std;
 
+const double PI = 3.14159265358979323846;
+
 double s_calculation(double x, double y, double z) {
     if (z < 0) {
         cout << "Помилка: значення z не може бути від'ємним." << endl;
         return NAN;
     }
     double num = pow(x, 2) - pow(y, 3);
-    double den = 12 * x + pow(y, 2) - M_PI * sqrt(z);
+    double den = 12 * x + pow(y, 2) - PI * sqrt(z);
 
     if (den == 0) {
         cout << "Помилка: знаменник не може бути нульовим." << endl;
@@ -197,4 +199,23 @@ void task10_3(const char* inputFile, const char* outputFile) {
 
     in.close();
     out.close();
+}
+
+ClassLab12_Kolesnyk::ClassLab12_Kolesnyk(double length) {
+    setElength(length);
+}
+
+void ClassLab12_Kolesnyk::setElength(double length) {
+    if (length > 0.0)
+        elength = length;
+    else
+        elength = 1.0;
+}
+
+double ClassLab12_Kolesnyk::getElength() {
+    return elength;
+}
+
+double ClassLab12_Kolesnyk::getVolume() {
+    return pow(elength, 3);
 }

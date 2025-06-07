@@ -24,4 +24,16 @@ void task10_1(const char*, const char*);
 void task10_2(const char*);
 void task10_3(const char*, const char*);
 
+class ClassLab12_Kolesnyk {
+
+public:
+    ClassLab12_Kolesnyk(double length = 1.0);
+    void setElength(double length = 1.0);
+    double getElength();
+    double getVolume();
+
+private:
+    double elength;
+};
+
 #endif // MODULESKOLESNYK_H_INCLUDED
