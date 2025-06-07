@@ -1,6 +1,7 @@
 #ifndef MODULESKOLESNYK_H_INCLUDED
 #define MODULESKOLESNYK_H_INCLUDED
 #include <string>
+#include <cmath>
 
 using namespace std;
 
@@ -35,5 +36,24 @@ public:
 private:
     double elength;
 };
+
+ClassLab12_Kolesnyk::ClassLab12_Kolesnyk(double length) {
+    setElength(length);
+}
+
+void ClassLab12_Kolesnyk::setElength(double length) {
+    if (length > 0.0)
+        elength = length;
+    else
+        elength = 1.0;
+}
+
+double ClassLab12_Kolesnyk::getElength() {
+    return elength;
+}
+
+double ClassLab12_Kolesnyk::getVolume() {
+    return pow(elength, 3);
+}
 
 #endif // MODULESKOLESNYK_H_INCLUDED

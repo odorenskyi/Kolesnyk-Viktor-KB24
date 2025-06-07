@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1749317033 source:g:\Університети\Завдання 1 курс - 2 семестр\kolesnyk-viktor-kb24\lab12\prj\teacher\main.cpp
+	<iostream>
+	<fstream>
+	<string>
+	<cmath>
+	"ModulesKolesnyk.h"
+
+1749311484 g:\Університети\Завдання 1 курс - 2 семестр\kolesnyk-viktor-kb24\lab08\prj\moduleskolesnyk.h
+	<string>
+	<cmath>
+

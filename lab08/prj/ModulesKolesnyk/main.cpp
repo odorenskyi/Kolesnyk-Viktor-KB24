@@ -200,22 +200,3 @@ void task10_3(const char* inputFile, const char* outputFile) {
     in.close();
     out.close();
 }
-
-ClassLab12_Kolesnyk::ClassLab12_Kolesnyk(double length) {
-    setElength(length);
-}
-
-void ClassLab12_Kolesnyk::setElength(double length) {
-    if (length > 0.0)
-        elength = length;
-    else
-        elength = 1.0;
-}
-
-double ClassLab12_Kolesnyk::getElength() {
-    return elength;
-}
-
-double ClassLab12_Kolesnyk::getVolume() {
-    return pow(elength, 3);
-}
